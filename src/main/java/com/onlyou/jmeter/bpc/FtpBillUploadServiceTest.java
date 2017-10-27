@@ -63,8 +63,6 @@ public class FtpBillUploadServiceTest extends BaseServiceTest {
         params.addArgument("customerId", customerId);
         params.addArgument("billCount", billCount + "");
         params.addArgument("uploadImageFile", uploadImageFile);
-        params.addArgument("packetCode", packetCode);
-
 		params.addArgument("packetCode", "V510100905");
 		params.addArgument("partnerId", "364ae996eae24aebb3ac03fbeea89786");
 		params.addArgument("SequenceNO", "0003");
@@ -72,7 +70,6 @@ public class FtpBillUploadServiceTest extends BaseServiceTest {
 		params.addArgument("AccountDate", "201709");
 		params.addArgument("ImgType", "KJDZ0123");
 		params.addArgument("imageUri", "364ae996eae24aebb3ac03fbeea89786/81bc3717015b47eba89174d5dbd538b6/201709/V510100905/336.jpg");
-		params.addArgument("packetCode", "V510100905");
         return params;
 	}
 
