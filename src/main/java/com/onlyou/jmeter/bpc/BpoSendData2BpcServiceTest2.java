@@ -110,10 +110,10 @@ public class BpoSendData2BpcServiceTest2 extends BaseServiceTest {
 		baseInfoMap.put("SequenceNO", sequenceNO);
 		baseInfoMap.put("FeeID", "");
 		baseInfoMap.put("FeeCode", "");
-		baseInfoMap.put("BillBatch", "");
-		baseInfoMap.put("PageNO", "10");
+		baseInfoMap.put("BillBatch", "1");
+		baseInfoMap.put("PageNO", "2");
 		baseInfoMap.put("LastEndingBalance", "0");
-		baseInfoMap.put("EndingBalance", "");
+		baseInfoMap.put("EndingBalance", "9");
 		baseInfoMap.put("BankCode", "建设银行");
 		baseInfoMap.put("AccountName", "瑞英网络技术");
 		baseInfoMap.put("AccountNumber", "35001656240052501695");
