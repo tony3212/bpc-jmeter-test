@@ -82,7 +82,6 @@ public abstract class BaseServiceTest extends AbstractJavaSamplerClient {
 	 */
 	@Override
     public void setupTest(JavaSamplerContext context) {
-		DubboContext.getInstance().initApplicationContext();
 		bpoBillService = DubboContext.getInstance().getBean(IBpoBillService.class);
 		bpcPublicService = DubboContext.getInstance().getBean(IBpcPublicService.class);
 	}

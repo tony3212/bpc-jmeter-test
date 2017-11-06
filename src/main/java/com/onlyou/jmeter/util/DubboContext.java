@@ -6,22 +6,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * DubboContext
- * @author HQH
  *
+ * @author HQH
  */
 public class DubboContext {
     private static DubboContext instance = new DubboContext();
     private ApplicationContext context;
 
     private DubboContext() {
-
+        initApplicationContext();
     }
 
     public static DubboContext getInstance() {
         return instance;
     }
 
-    public void initApplicationContext() {
+    private void initApplicationContext() {
         try {
             context = new ClassPathXmlApplicationContext("classpath:/dubbo-client.xml");
         } catch (BeansException e) {
